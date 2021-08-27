@@ -1,0 +1,59 @@
+html, body{
+
+    margin: 0px;
+}
+
+.navbar{
+
+    font-family: sans-serif;
+    margin: 0 auto;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.navbar a{
+
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.green-bg{
+    padding: 30px;
+    background-color: green;
+}
+
+.green-border a:before, .green-border a:after{
+   
+    position: absolute;
+    content: '';
+    opacity: 0.1;
+    height: 100%;
+    width: 1px;
+    background: #FFF;
+    transition: all 0.4s;
+}
+
+.green-border a:before{
+    
+    left: 0;
+    right: 0;
+}
+
+.green-border a:after{
+
+    left: 0;
+    bottom: 0;
+}
+
+.green-border a:hover:before, .green-border a:hover:after{
+
+    opacity: 1;
+    height: 1px;
+    width: 100%;
+}
