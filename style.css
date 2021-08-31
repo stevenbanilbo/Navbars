@@ -9,6 +9,7 @@ html, body{
     margin: 0 auto;
 	text-transform: uppercase;
 	text-align: center;
+    border: 1px solid black;
 }
 
 .navbar a{
@@ -24,7 +25,7 @@ html, body{
 }
 
 .green-bg{
-    padding: 30px;
+    padding: 20px;
     background-color: green;
 }
 
@@ -57,3 +58,60 @@ html, body{
     height: 1px;
     width: 100%;
 }
+
+
+.red-bg{
+    padding: 20px;
+    background-color: #840208;
+
+   
+}
+
+.red-border a:before, .red-border a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+    left: 0px;
+    bottom: 0px;
+  
+}
+
+.red-border a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+
+}
+
+.yellow-bg{
+    padding: 20px;
+    background-color: rgb(253, 253, 161);
+    
+
+   
+}
+
+.yellow-border a{
+
+    color: black;
+    
+
+}
+.yellow-border a:hover{
+
+  background-color: rgba(0, 0, 233, 0.726);
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: white;
+  opacity: 70%;
+  transition: 0.4s ease-in-out;
+
+
+}
+
+
